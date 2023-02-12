@@ -142,7 +142,7 @@ function activate(context) {
                 let editor = vscode.window.activeTextEditor
                 if (!editor) { return }
                 editor.edit((edit) => {
-                    edit.insert(selection.end, ' = ' + data)
+                    edit.insert(selection.end, ' = ' + replaceBmatrix(data))
                 })  
             }, (err) => {
                 vscode.window.showErrorMessage(err)
@@ -162,7 +162,7 @@ function activate(context) {
                 let editor = vscode.window.activeTextEditor
                 if (!editor) { return }
                 editor.edit((edit) => {
-                    edit.insert(selection.end, ' \\to ' + data)
+                    edit.insert(selection.end, ' \\to ' + replaceBmatrix(data))
                 })  
             }, (err) => {
                 vscode.window.showErrorMessage(err)
@@ -315,6 +315,10 @@ function activate(context) {
 }
 
 exports.activate = activate
+
+function replaceBmatrix(data) {
+    return data.replaceAll("{bmatrix}", "{pmatrix}")
+}
 
 // this method is called when your extension is deactivated
 function deactivate() {
