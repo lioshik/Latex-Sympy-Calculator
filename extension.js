@@ -244,7 +244,7 @@ function activate(context) {
                 let editor = vscode.window.activeTextEditor
                 if (!editor) { return }
                 editor.edit((edit) => {
-                    edit.replace(selection, data)
+                    edit.replace(selection, replaceBmatrix(data))
                 })  
             }, (err) => {
                 vscode.window.showErrorMessage(err)
