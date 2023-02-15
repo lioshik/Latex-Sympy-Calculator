@@ -1,7 +1,7 @@
 {
-    "name": "latex-sympy-calculator",
-    "displayName": "Latex Sympy Calculator",
-    "publisher": "OrangeX4",
+    "name": "latex-sympy-calculator-225",
+    "displayName": "Latex Sympy Calculator 225",
+    "publisher": "Mality",
     "description": "Convert Latex to Sympy and calculate it in Latex or Markdown.",
     "icon": "icon.png",
     "version": "1.5.2",
@@ -176,11 +176,10 @@
     "dependencies": {},
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/OrangeX4/Latex-Sympy-Calculator/issues"
+        "url": "https://github.com/lioshik/Latex-Sympy-Calculator/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/OrangeX4/Latex-Sympy-Calculator"
-    },
-    "homepage": "https://orangex4.cool"
+        "url": "https://github.com/lioshik/Latex-Sympy-Calculator"
+    }
 }
